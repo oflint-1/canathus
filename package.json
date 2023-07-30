@@ -2,9 +2,10 @@
   "name": "cantharus",
   "version": "1.0.0",
   "description": "Custom form hook for React",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/oflint-1/cantharus/issues"
   },
-  "homepage": "https://github.com/oflint-1/cantharus#readme"
+  "homepage": "https://github.com/oflint-1/cantharus#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
 }
