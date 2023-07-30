@@ -1,3 +1,6 @@
 "use strict";
-console.log("Hello World");
+function helloNpm() {
+    return "hello NPM";
+}
+module.exports = helloNpm;
 //# sourceMappingURL=index.js.map
