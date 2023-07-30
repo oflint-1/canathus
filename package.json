@@ -1,0 +1,19 @@
+{
+  "name": "cantharus",
+  "version": "1.0.0",
+  "description": "Custom form hook for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oflint-1/cantharus.git"
+  },
+  "author": "enscrybe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oflint-1/cantharus/issues"
+  },
+  "homepage": "https://github.com/oflint-1/cantharus#readme"
+}
