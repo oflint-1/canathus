@@ -1,7 +1,7 @@
-interface inputData {
-  value: any;
+interface InputData<Datatype> {
+  value: Datatype;
   error: boolean;
   errorMsg: string;
-  errorStyle: "error" | "";
-  validate: () => boolean;
+  validate: (value: Datatype) => boolean;
+  setError: (newError: boolean, newErrorMsg?: string) => void;
 }

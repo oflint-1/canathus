@@ -2,17 +2,23 @@ import { useState } from "react";
 
 export const useInput = <Datatype>(
   initialValue: Datatype,
-  validate: () => boolean
+  validate: (value: Datatype) => boolean
 ) => {
   /**
    * Set initial data value for the input
    */
-  const [data, setData] = useState<inputData>({
+  const [data, setData] = useState<InputData<Datatype>>({
     value: initialValue,
     error: false,
     errorMsg: "",
-    errorStyle: "",
     validate,
+    setError: (newError: boolean, newErrorMsg?: string) => {
+      setData({
+        ...data,
+        error: newError,
+        errorMsg: newErrorMsg ? newErrorMsg : "",
+      });
+    },
   });
 
   /**
