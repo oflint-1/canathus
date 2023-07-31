@@ -1,5 +1,4 @@
-function helloNpm() {
-  return "hello NPM";
-}
+import { useInput } from "./useInput";
+import { validate } from "./validate";
 
-module.exports = helloNpm;
+module.exports = { useInput, validate };
