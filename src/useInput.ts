@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { InputData } from "./InputData";
 
 export const useInput = <Datatype>(
   initialValue: Datatype,
   validate: (value: Datatype) => { valid: boolean; errorMsg?: string }
-) => {
+): [InputData<Datatype>, (newValue: Datatype) => void] => {
   /**
    * Set initial data value for the input
    */
@@ -13,6 +14,7 @@ export const useInput = <Datatype>(
     errorMsg: "",
     validate,
     setError: (newError: boolean, newErrorMsg?: string) => {
+      // Update state with error information
       setData((oldData) => {
         return {
           ...oldData,

@@ -12,6 +12,7 @@ const useInput = (initialValue, validate) => {
         errorMsg: "",
         validate,
         setError: (newError, newErrorMsg) => {
+            // Update state with error information
             setData((oldData) => {
                 return Object.assign(Object.assign({}, oldData), { error: newError, errorMsg: newErrorMsg ? newErrorMsg : "" });
             });

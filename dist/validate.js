@@ -1,6 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.validate = void 0;
+/**
+ *
+ * @param fields
+ * @returns
+ */
 const validate = (fields) => {
     let allValid = true;
     for (let key in fields) {

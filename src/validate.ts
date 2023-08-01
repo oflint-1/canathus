@@ -1,4 +1,11 @@
-export const validate = (fields: ValidateFields) => {
+import { ValidateFields } from "./ValidateFields";
+
+/**
+ *
+ * @param fields
+ * @returns
+ */
+export const validate = <Datatype>(fields: ValidateFields<Datatype>) => {
   let allValid = true;
   for (let key in fields) {
     const data = fields[key];
