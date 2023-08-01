@@ -1,1 +1,2 @@
-declare function helloNpm(): string;
+export { useInput } from "./useInput";
+export { validate } from "./validate";

@@ -1,4 +1,2 @@
-import { useInput } from "./useInput";
-import { validate } from "./validate";
-
-module.exports = { useInput, validate };
+export { useInput } from "./useInput";
+export { validate } from "./validate";
