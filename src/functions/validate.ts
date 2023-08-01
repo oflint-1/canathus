@@ -1,4 +1,4 @@
-import { ValidateFields } from "./ValidateFields";
+import { ValidateFields } from "../interfaces/ValidateFields";
 
 /**
  *

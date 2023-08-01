@@ -1,5 +1,5 @@
 /**
  * Export module functions
  */
-export { useInput } from "./useInput";
-export { validate } from "./validate";
+export { useInput } from "./hooks/useInput";
+export { validate } from "./functions/validate";

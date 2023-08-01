@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { InputData } from "./InputData";
+import { InputData } from "../interfaces/InputData";
 
 export const useInput = <Datatype>(
   initialValue: Datatype,
