@@ -1,1 +1,4 @@
-export declare const useInput: <Datatype>(initialValue: Datatype, validate: (value: Datatype) => boolean) => (InputData<Datatype> | ((newValue: Datatype) => void))[];
+export declare const useInput: <Datatype>(initialValue: Datatype, validate: (value: Datatype) => {
+    valid: boolean;
+    errorMsg?: string;
+}) => (InputData<Datatype> | ((newValue: Datatype) => void))[];

@@ -1,11 +1,14 @@
 export const validate = (fields: ValidateFields) => {
-  let valid = true;
+  let allValid = true;
   for (let key in fields) {
     const data = fields[key];
-    if (!data.validate(data.value)) {
-      valid = false;
-      data.setError(true);
+    const { valid, errorMsg } = data.validate(data.value);
+    if (!valid) {
+      allValid = false;
+      data.setError(true, errorMsg);
+    } else {
+      data.setError(false, errorMsg);
     }
   }
-  return valid;
+  return allValid;
 };

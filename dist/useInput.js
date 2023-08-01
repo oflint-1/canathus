@@ -12,7 +12,9 @@ const useInput = (initialValue, validate) => {
         errorMsg: "",
         validate,
         setError: (newError, newErrorMsg) => {
-            setData(Object.assign(Object.assign({}, data), { error: newError, errorMsg: newErrorMsg ? newErrorMsg : "" }));
+            setData((oldData) => {
+                return Object.assign(Object.assign({}, oldData), { error: newError, errorMsg: newErrorMsg ? newErrorMsg : "" });
+            });
         },
     });
     /**
@@ -20,7 +22,9 @@ const useInput = (initialValue, validate) => {
      * @param newValue New value to update
      */
     const updateValue = (newValue) => {
-        setData(Object.assign(Object.assign({}, data), { value: newValue }));
+        setData((oldData) => {
+            return Object.assign(Object.assign({}, oldData), { value: newValue, error: false, errorMsg: "" });
+        });
     };
     return [data, updateValue];
 };
