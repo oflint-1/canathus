@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useInput = void 0;
 const react_1 = require("react");
-const useInput = (initialValue, validate) => {
+const useInput = (initialValue, validator) => {
     /**
      * Set initial data value for the input
      */
@@ -10,7 +10,7 @@ const useInput = (initialValue, validate) => {
         value: initialValue,
         error: false,
         errorMsg: "",
-        validate,
+        validator,
         setError: (newError, newErrorMsg) => {
             // Update state with error information
             setData((oldData) => {
@@ -30,4 +30,3 @@ const useInput = (initialValue, validate) => {
     return [data, updateValue];
 };
 exports.useInput = useInput;
-//# sourceMappingURL=useInput.js.map

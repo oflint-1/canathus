@@ -1,21 +1,23 @@
 import { ValidateFields } from "../interfaces/ValidateFields";
 
 /**
- *
- * @param fields
- * @returns
+ * Validates a set of inputs.
+ * @param fields object containing inputs to validate
+ * @returns true if all input values are valid
  */
-export const validate = <Datatype>(fields: ValidateFields<Datatype>) => {
+export const validate = (fields: ValidateFields<any>) => {
   let allValid = true;
+  // Get each key
   for (let key in fields) {
+    // Validate the data
     const data = fields[key];
-    const { valid, errorMsg } = data.validate(data.value);
-    if (!valid) {
-      allValid = false;
-      data.setError(true, errorMsg);
-    } else {
-      data.setError(false, errorMsg);
-    }
+    const { valid, errorMsg } = data.validator(data.value);
+
+    // Set all valid
+    if (!valid) allValid = false;
+
+    // Update error
+    data.setError(!valid, errorMsg);
   }
   return allValid;
 };

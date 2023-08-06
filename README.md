@@ -4,19 +4,30 @@ Custom form hook for React
 
 # Ideal workflow 
 
-```tsx
-const [data, setData] = useInput(null, data => { data.length > 0; });
+```TSX
+// <!-- Ideal workflow -->
+const [data, setData] = useInput<string>("", (value) => {
+    return {
+        valid: value.length > 2,
+        errorMsg: value.length <= 2 ? "Too short" : "",
+    };
+});
 
-const submit = (e) => {
-    const valid = validate([...attributes])
+const handleSubmit = (e: any) => {
+    e.preventDefault();
+    validate({ data });
+};
 
-    if (valid){
-        return true;
-    }
-}
-
-<form>
-    <input value={data} onchange={value => setData(value)} className={`${data.error? "test" : ""}`}/>
+return (
+<form onSubmit={(e) => handleSubmit(e)}>
+    <input
+    value={data.value}
+    onChange={(e) => setData(e.target.value)}
+    className={`${data.error ? "test" : ""}`}
+    />
+    <br />
     {data.error && <p>{data.errorMsg}</p>}
+    <button>test</button>
 </form>
+);
 ```

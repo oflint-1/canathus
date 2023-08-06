@@ -3,7 +3,7 @@ import { InputData } from "../interfaces/InputData";
 
 export const useInput = <Datatype>(
   initialValue: Datatype,
-  validate: (value: Datatype) => { valid: boolean; errorMsg?: string }
+  validator: (value: Datatype) => { valid: boolean; errorMsg?: string }
 ): [InputData<Datatype>, (newValue: Datatype) => void] => {
   /**
    * Set initial data value for the input
@@ -12,7 +12,7 @@ export const useInput = <Datatype>(
     value: initialValue,
     error: false,
     errorMsg: "",
-    validate,
+    validator,
     setError: (newError: boolean, newErrorMsg?: string) => {
       // Update state with error information
       setData((oldData) => {

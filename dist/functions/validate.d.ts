@@ -1,7 +1,7 @@
 import { ValidateFields } from "../interfaces/ValidateFields";
 /**
- *
- * @param fields
- * @returns
+ * Validates a set of inputs.
+ * @param fields object containing inputs to validate
+ * @returns true if all input values are valid
  */
-export declare const validate: <Datatype>(fields: ValidateFields<Datatype>) => boolean;
+export declare const validate: (fields: ValidateFields<any>) => boolean;

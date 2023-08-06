@@ -2,24 +2,23 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.validate = void 0;
 /**
- *
- * @param fields
- * @returns
+ * Validates a set of inputs.
+ * @param fields object containing inputs to validate
+ * @returns true if all input values are valid
  */
 const validate = (fields) => {
     let allValid = true;
+    // Get each key
     for (let key in fields) {
+        // Validate the data
         const data = fields[key];
-        const { valid, errorMsg } = data.validate(data.value);
-        if (!valid) {
+        const { valid, errorMsg } = data.validator(data.value);
+        // Set all valid
+        if (!valid)
             allValid = false;
-            data.setError(true, errorMsg);
-        }
-        else {
-            data.setError(false, errorMsg);
-        }
+        // Update error
+        data.setError(!valid, errorMsg);
     }
     return allValid;
 };
 exports.validate = validate;
-//# sourceMappingURL=validate.js.map
