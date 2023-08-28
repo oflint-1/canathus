@@ -1,6 +1,6 @@
 {
   "name": "canathus",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Custom form hook for React",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/oflint-1/cantharus/issues"
   },
-  "homepage": "https://github.com/oflint-1/cantharus#readme",
+  "homepage": "https://oflint-1.github.io/canathus/",
   "devDependencies": {
     "@types/node": "^20.4.5",
     "@types/react": "^18.2.17",
