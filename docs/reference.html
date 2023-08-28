@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Canathus - A react form micro library for quick custom input validation."
+    />
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <title>canathus - Getting Started</title>
+    <link href="assets/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="getting-started.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="/assets/logo.svg" alt="Canathus logo" />
+      <a href="/">Home</a>
+      <a href="/getting-started.html">Getting Started</a>
+      <a href="/reference.html" class="active">Reference</a>
+    </nav>
+    <main>
+      <aside>
+        <div class="menu">
+          <h1>Quick Menu</h1>
+          <ul>
+            <li><a href="#useInput">useInput</a></li>
+            <li><a href="#validate">validate</a></li>
+            <li><a href="#inputData">InputData</a></li>
+            <li><a href="#validateFields">ValidateFields</a></li>
+          </ul>
+        </div>
+      </aside>
+      <section class="content">
+        <h1>Reference</h1>
+        A reference to all of the functions and interfaces available in
+        canathus.
+        <br /><br />
+        <section class="article-section" id="useInput">
+          <h2>--useInput--</h2>
+
+          React hook for creating and displaying validated form data.
+          <br /><br />
+          <h3>Usage:</h3>
+          <pre><code class="language-tsx">const [data, setData] = useInput&#x3C;string&#x3E;(&#x22;&#x22;, validator)
+
+return &#x3C;input value={data.value} onChange={e =&#x3E; setData(e.target.value)}&#x3E;</code></pre>
+          <br />
+          <h3>Parameters</h3>
+          <ul>
+            <li>
+              <b>initialValue:</b> Value to initialise the form data with.
+            </li>
+            <li>
+              <b>validator:</b> Function which evaluates whether the current
+              value is valid.
+            </li>
+          </ul>
+          <h3>Returns</h3>
+          <ul>
+            <li>
+              <b>data:</b> <a href="#inputData">InputData</a> object containing
+              both the form data, as well as any error state.
+            </li>
+            <li><b>setData:</b> Function which updates the value of data.</li>
+          </ul>
+          <h3>Limitations</h3>
+          <ul>
+            <li>
+              Currently state cannot be updated using a function as with React
+              `useState`. This is planned to be implemented at a later date.
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <br />
+        <section class="article-section" id="validate">
+          <h2>--validate--</h2>
+
+          Function to evaluate whether the current values of form data objects
+          are valid.
+          <br /><br />
+          <h3>Usage:</h3>
+          <pre><code class="language-tsx">const fields = { TitleData, TextData };
+const valid = validate(fields);</code></pre>
+          <br />
+          <h3>Parameters</h3>
+          <ul>
+            <li>
+              <b>fields:</b>
+              <a href="#validateFields">ValidateFields</a> object containing
+              <a href="#inputData">InputData</a> objects. Each will be validated
+              with their own validate functions.
+            </li>
+          </ul>
+          <h3>Returns</h3>
+          <ul>
+            <li>
+              <b>allValid:</b> Boolean value which is true if all fields are
+              valid.
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <br />
+
+        <section class="article-section" id="inputData">
+          <h2>--InputData--</h2>
+
+          Interface for form data object.
+          <br /><br />
+          <pre><code class="language-tsx">interface InputData&#x3C;Datatype&#x3E; {
+    value: Datatype;
+    error: boolean;
+    errorMsg: string;
+    validator: (value: Datatype) =&#x3E; { valid: boolean; errorMsg?: string };
+    setError: (newError: boolean, newErrorMsg?: string) =&#x3E; void;
+}</code></pre>
+          <br />
+          <h3>Properties</h3>
+          <ul>
+            <li><b>value:</b> The current value of the data.</li>
+            <li>
+              <b>error:</b> Boolean value decscribing whether there is an error.
+            </li>
+            <li><b>errorMsg:</b> Error message to display.</li>
+            <li>
+              <b>validator:</b> Function which should return an object
+              containing whether the current data value is valid, as well as an
+              optional error message.
+            </li>
+            <li>
+              <b>setError:</b> Function used interanlly to update the value of
+              an error.
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+        <br />
+
+        <section class="article-section" id="validateFields">
+          <h2>--ValidateFields--</h2>
+
+          Interface for passing fields to <a href="#validate">validate</a>.
+          <br /><br />
+          <pre><code class="language-tsx">interface ValidateFields&#x3C;Datatype&#x3E; {
+    [key: string]: InputData&#x3C;Datatype&#x3E;;
+}</code></pre>
+          <br />
+          <h3>Properties</h3>
+          <ul>
+            <li>
+              <b>key:</b> pass an InputData object which will be validated.
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <script src="/assets/prism.js"></script>
+    <script src="/assets/nav.js"></script>
+  </body>
+</html>
