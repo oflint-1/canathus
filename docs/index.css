@@ -56,10 +56,12 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 .heading {
   height: 6.5rem;
   font-weight: lighter;
 }
+
 .sub-heading {
   font-size: 3rem;
   margin: 5rem 0 0 0;
