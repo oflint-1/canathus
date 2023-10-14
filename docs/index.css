@@ -57,7 +57,7 @@ main {
   align-items: center;
 }
 .heading {
-  height: 9.5rem;
+  height: 6.5rem;
   font-weight: lighter;
 }
 .sub-heading {
@@ -70,6 +70,13 @@ main {
 .subtext {
   display: block;
   font-size: 1rem;
+  color: #454555;
+}
+
+.motto {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.4rem;
 }
 
 .demo {
