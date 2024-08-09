@@ -365,17 +365,17 @@ img.arrow-hover {
     margin-top: 5rem;
   }
   nav {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   nav.visible {
     padding: 0;
   }
   .hamburger.visible {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
   .splash {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   .splash::after {
     bottom: -40rem;
