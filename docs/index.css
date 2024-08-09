@@ -130,6 +130,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.1; /* Adjust the opacity for subtlety */
+  pointer-events: none;
 }
 
 .call-to-action {
@@ -376,7 +377,7 @@ img.arrow-hover {
     height: 150%;
   }
   .heading {
-    font-size: 45px;
+    font-size: 40px;
   }
   .subtext {
     font-size: 22px;
