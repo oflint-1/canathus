@@ -34,7 +34,7 @@ nav {
   justify-content: space-between;
   padding: 0 5rem;
   gap: 3rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 nav a {
@@ -147,14 +147,14 @@ nav a.active {
 
 @media (max-width: 601px) {
   nav {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   nav.visible {
     padding: 0;
   }
   .hamburger.visible {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 }
 
@@ -169,6 +169,8 @@ nav a.active {
 .logo-title {
   font-size: 40px;
   color: var(--primary);
+  height: 20px;
+  line-height: 28px;
 }
 main {
   width: 100%;
