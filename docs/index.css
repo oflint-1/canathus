@@ -38,6 +38,8 @@ nav {
 }
 
 nav a {
+  height: 20px;
+  line-height: 28px;
   text-decoration: none;
   color: black;
 }
