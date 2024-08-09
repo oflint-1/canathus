@@ -17,16 +17,41 @@
       canathus - A react form micro library for fast, custom input validation.
     </title>
     <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="new_index.css" />
   </head>
   <body>
     <main>
       <section class="initial">
         <nav>
-          <img src="/canathus/assets/logo.svg" alt="Canathus logo" />
-          <a href="/canathus/" class="active">Home</a>
-          <a href="/canathus/getting-started.html">Getting Started</a>
-          <a href="/canathus/reference.html">Reference</a>
+          <div class="logo">
+            <img src="/canathus/assets/logo.svg" alt="Canathus logo" />
+            <h1 class="logo-title">canathus</h1>
+          </div>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="navigation">
+            <a href="/canathus/" class="active">Home</a>
+            <a href="/canathus/getting-started.html">Getting Started</a>
+            <a href="/canathus/reference.html">Reference</a>
+          </div>
+          <div class="links">
+            <a
+              class="action action-svg"
+              href="https://www.npmjs.com/package/canathus"
+            >
+              <img src="/canathus/assets/npm.svg" alt="NPM logo" />
+            </a>
+            <a
+              class="action action-svg"
+              href="https://github.com/oflint-1/canathus"
+            >
+              <img src="/canathus/assets/github.svg" alt="GitHub logo" />
+            </a>
+          </div>
         </nav>
         <div class="header">
           <h1 class="heading">canathus</h1>
@@ -148,5 +173,18 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".navigation");
+      const nav = document.querySelector("nav");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("visible");
+        nav.classList.toggle("visible");
+        hamburger.classList.toggle("visible");
+        document.body.classList.toggle("no-scroll");
+      });
+    </script>
   </body>
 </html>
