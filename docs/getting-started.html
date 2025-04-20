@@ -1,93 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A simple tutorial to get started with canathus and react forms."
-    />
-    <link rel="icon" href="/canathus/assets/favicon.png" type="image/x-icon" />
-    <link
-      rel="shortcut icon"
-      href="/canathus/assets/favicon.png"
-      type="image/x-icon"
-    />
-    <title>canathus - Getting Started</title>
-    <link href="/canathus/assets/prism.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="getting-started.css" />
-  </head>
-  <body>
-    <nav>
-      <a class="logo" href="/canathus/">
-        <img src="/canathus/assets/logo.svg" alt="Canathus logo" />
-        <h1 class="logo-title">canathus</h1>
-      </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="A simple tutorial to get started with canathus and react forms."
+        />
+        <link
+            rel="icon"
+            href="/canathus/assets/favicon.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="shortcut icon"
+            href="/canathus/assets/favicon.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="/canathus/assets/favicon.png"
+        />
+        <link rel="apple-touch-icon" href="/canathus/assets/favicon.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="/canathus/assets/favicon.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="/canathus/assets/favicon.png"
+        />
+        <title>canathus - Getting Started</title>
+        <link href="/canathus/assets/prism.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" type="text/css" href="getting-started.css" />
+    </head>
+    <body>
+        <nav>
+            <a class="logo" href="/canathus/">
+                <img src="/canathus/assets/logo.svg" alt="Canathus logo" />
+                <h1 class="logo-title">canathus</h1>
+            </a>
 
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <div class="navigation">
-        <a href="/canathus/">Home</a>
-        <a href="/canathus/getting-started.html" class="active"
-          >Getting Started</a
-        >
-        <a href="/canathus/reference.html">Reference</a>
-      </div>
-      <div class="links">
-        <a
-          class="action action-svg"
-          href="https://www.npmjs.com/package/canathus"
-        >
-          <img src="/canathus/assets/npm.svg" alt="NPM logo" />
-        </a>
-        <a
-          class="action action-svg"
-          href="https://github.com/oflint-1/canathus"
-        >
-          <img src="/canathus/assets/github.svg" alt="GitHub logo" />
-        </a>
-      </div>
-    </nav>
-    <main>
-      <aside>
-        <div class="menu">
-          <h1>Quick Menu</h1>
-          <ul>
-            <li><a href="#installation">Installation</a></li>
-            <li><a href="#basicUsage">Basic Example</a></li>
-            <li><a href="#creation">Creating Input Data</a></li>
-            <li><a href="#customValidators">Custom Validators</a></li>
-            <li><a href="#recommendedWorkflow">Recommended Workflow</a></li>
-          </ul>
-        </div>
-      </aside>
-      <section class="content">
-        <h1>Getting Started</h1>
-        A guide to getting started with using canathus in your projects.
-        <br /><br />
-        <section class="article-section" id="installation">
-          <h2>--Installation--</h2>
-          <p>
-            Canathus can be installed into your react application with one
-            command:
-          </p>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navigation">
+                <a href="/canathus/">Home</a>
+                <a href="/canathus/getting-started.html" class="active"
+                    >Getting Started</a
+                >
+                <a href="/canathus/reference.html">Reference</a>
+            </div>
+            <div class="links">
+                <a
+                    class="action action-svg"
+                    href="https://www.npmjs.com/package/canathus"
+                >
+                    <img src="/canathus/assets/npm.svg" alt="NPM logo" />
+                </a>
+                <a
+                    class="action action-svg"
+                    href="https://github.com/oflint-1/canathus"
+                >
+                    <img src="/canathus/assets/github.svg" alt="GitHub logo" />
+                </a>
+            </div>
+        </nav>
+        <main>
+            <aside>
+                <div class="menu">
+                    <h1>Quick Menu</h1>
+                    <ul>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#basicUsage">Basic Example</a></li>
+                        <li><a href="#creation">Creating Input Data</a></li>
+                        <li>
+                            <a href="#customValidators">Custom Validators</a>
+                        </li>
+                        <li>
+                            <a href="#recommendedWorkflow"
+                                >Recommended Workflow</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="content">
+                <h1>Getting Started</h1>
+                A guide to getting started with using canathus in your projects.
+                <br /><br />
+                <section class="article-section" id="installation">
+                    <h2>--Installation--</h2>
+                    <p>
+                        Canathus can be installed into your react application
+                        with one command:
+                    </p>
 
-          <pre><code class="language-bash">npm install canathus</code></pre>
-        </section>
-        <hr />
-        <br />
-        <section class="article-section" id="basicUsage">
-          <h2>--Basic Example--</h2>
-          <p>
-            This is a small example usage, to get up and running with canathus
-          </p>
+                    <pre><code class="language-bash">npm install canathus</code></pre>
+                </section>
+                <hr />
+                <br />
+                <section class="article-section" id="basicUsage">
+                    <h2>--Basic Example--</h2>
+                    <p>
+                        This is a small example usage, to get up and running
+                        with canathus
+                    </p>
 
-          <pre><code class="language-tsx">import { useInput, validate } from &#x22;canathus&#x22;;
+                    <pre><code class="language-tsx">import { useInput, validate } from &#x22;canathus&#x22;;
 
 export function App() {
     // Setup input with validator
@@ -116,63 +143,66 @@ export function App() {
     &#x3C;/form&#x3E;
     );
 }</code></pre>
-        </section>
+                </section>
 
-        <hr />
-        <br />
-        <section class="article-section" id="creation">
-          <h2>--Creating Input Data--</h2>
-          In canathus, you use the useInput hook to create input data. It takes
-          two arguments, a default value and then a validator function. The
-          validator function is run whenever you validate your input.
+                <hr />
+                <br />
+                <section class="article-section" id="creation">
+                    <h2>--Creating Input Data--</h2>
+                    In canathus, you use the useInput hook to create input data.
+                    It takes two arguments, a default value and then a validator
+                    function. The validator function is run whenever you
+                    validate your input.
 
-          <pre><code class="language-tsx">const [data, setData] = useInput(&#x22;test&#x22;, validator);</code></pre>
+                    <pre><code class="language-tsx">const [data, setData] = useInput(&#x22;test&#x22;, validator);</code></pre>
 
-          Here, we are setting the default value as &#x22;test&#x22;, and
-          setting a validator function.
-        </section>
+                    Here, we are setting the default value as &#x22;test&#x22;,
+                    and setting a validator function.
+                </section>
 
-        <hr />
-        <br />
-        <section class="article-section" id="customValidators">
-          <h2>--Custom Validators--</h2>
-          Canathus is built to use custom validation for input data. The
-          validator should return an object containing whether the current value
-          is valid, and what the error message is.<br /><br />
-          Below is an example validator, which checks the length of a string:
-          <pre><code class="language-tsx">const validator = (value) =&#x3E; {
+                <hr />
+                <br />
+                <section class="article-section" id="customValidators">
+                    <h2>--Custom Validators--</h2>
+                    Canathus is built to use custom validation for input data.
+                    The validator should return an object containing whether the
+                    current value is valid, and what the error message is.<br /><br />
+                    Below is an example validator, which checks the length of a
+                    string:
+                    <pre><code class="language-tsx">const validator = (value) =&#x3E; {
     const valid = value.length &#x3E; 0;
-    
+
     return {
         valid,
         errorMsg: valid ? &#x22;&#x22; : &#x22;This field is required&#x22;,
     };
 };</code></pre>
-        </section>
+                </section>
 
-        <hr />
-        <br />
-        <section class="article-section" id="recommendedWorkflow">
-          <h2>--Recommended Workflow--</h2>
-          For readability purposes, it is recommended to store your validator
-          functions in a separate directory called validators. These can then be
-          imported into your react component containing the form.<br /><br />
+                <hr />
+                <br />
+                <section class="article-section" id="recommendedWorkflow">
+                    <h2>--Recommended Workflow--</h2>
+                    For readability purposes, it is recommended to store your
+                    validator functions in a separate directory called
+                    validators. These can then be imported into your react
+                    component containing the form.<br /><br />
 
-          First we can create our validator:
-          <pre><code class="language-tsx">/* validators/lengthValidator.ts */
+                    First we can create our validator:
+                    <pre><code class="language-tsx">/* validators/lengthValidator.ts */
 export const lengthValidator = (value: string) =&#x3E; {
     const valid = value.length &#x3E; 0;
-    
+
     return {
         valid,
         errorMsg: valid ? &#x22;&#x22; : &#x22;This field is required&#x22;,
     };
 };</code></pre>
-          <br />
+                    <br />
 
-          Now we can use this within our form:
-          <br />
-          <pre><code class="language-tsx">/* App.ts */
+                    Now we can use this within our form:
+                    <br />
+                    <pre><code class="language-tsx">/* App.ts */
 import { useInput, validate } from &#x22;canathus&#x22;;
 import { lengthValidator } from "./validators/lengthValidator.js"
 
@@ -197,23 +227,23 @@ export function App() {
     &#x3C;/form&#x3E;
     );
 }</code></pre>
-        </section>
-      </section>
-    </main>
+                </section>
+            </section>
+        </main>
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".navigation");
-      const nav = document.querySelector("nav");
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".navigation");
+            const nav = document.querySelector("nav");
 
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("visible");
-        nav.classList.toggle("visible");
-        hamburger.classList.toggle("visible");
-        document.body.classList.toggle("no-scroll");
-      });
-    </script>
-    <script src="/canathus/assets/prism.js"></script>
-    <script src="/canathus/assets/nav.js"></script>
-  </body>
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("visible");
+                nav.classList.toggle("visible");
+                hamburger.classList.toggle("visible");
+                document.body.classList.toggle("no-scroll");
+            });
+        </script>
+        <script src="/canathus/assets/prism.js"></script>
+        <script src="/canathus/assets/nav.js"></script>
+    </body>
 </html>
