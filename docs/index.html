@@ -1,77 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A react library to build custom, validated forms. Integrate existing code to create simple, readable react files."
-    />
-    <link rel="icon" href="/canathus/assets/favicon.png" type="image/x-icon" />
-    <link
-      rel="shortcut icon"
-      href="/canathus/assets/favicon.png"
-      type="image/x-icon"
-    />
-    <title>
-      canathus - A react form micro library for fast, custom input validation.
-    </title>
-    <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-  </head>
-  <body>
-    <main>
-      <section class="initial">
-        <nav>
-          <a class="logo" href="/canathus/">
-            <img src="/canathus/assets/logo.svg" alt="Canathus logo" />
-            <h1 class="logo-title">canathus</h1>
-          </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="A react library to build custom, validated forms. Integrate existing code to create simple, readable react files."
+        />
+        <link
+            rel="icon"
+            href="/canathus/assets/favicon.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="shortcut icon"
+            href="/canathus/assets/favicon.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="/canathus/assets/favicon.png"
+        />
+        <link rel="apple-touch-icon" href="/canathus/assets/favicon.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="/canathus/assets/favicon.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="/canathus/assets/favicon.png"
+        />
+        <title>
+            canathus - A react form micro library for fast, custom input
+            validation.
+        </title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        <main>
+            <section class="initial">
+                <nav>
+                    <a class="logo" href="/canathus/">
+                        <img
+                            src="/canathus/assets/logo.svg"
+                            alt="Canathus logo"
+                        />
+                        <h1 class="logo-title">canathus</h1>
+                    </a>
 
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <div class="navigation">
-            <a href="/canathus/" class="active">Home</a>
-            <a href="/canathus/getting-started.html">Getting Started</a>
-            <a href="/canathus/reference.html">Reference</a>
-          </div>
-          <div class="links">
-            <a
-              class="action action-svg"
-              href="https://www.npmjs.com/package/canathus"
-            >
-              <img src="/canathus/assets/npm.svg" alt="NPM logo" />
-            </a>
-            <a
-              class="action action-svg"
-              href="https://github.com/oflint-1/canathus"
-            >
-              <img src="/canathus/assets/github.svg" alt="GitHub logo" />
-            </a>
-          </div>
-        </nav>
-        <section class="splash">
-          <div class="header">
-            <h1 class="heading">
-              Create complex forms, <br />Without complex code.
-            </h1>
-            <small class="subtext">A react form micro library</small>
-            <a class="call-to-action" href="/canathus/getting-started.html">
-              <span>Get Started</span>
-              <img src="/canathus/assets/right-arrow.svg" alt="Right arrow" />
-              <img
-                src="/canathus/assets/right-arrow-hover.svg"
-                class="arrow-hover"
-                alt="Right arrow"
-              />
-            </a>
-          </div>
-        </section>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="navigation">
+                        <a href="/canathus/" class="active">Home</a>
+                        <a href="/canathus/getting-started.html"
+                            >Getting Started</a
+                        >
+                        <a href="/canathus/reference.html">Reference</a>
+                    </div>
+                    <div class="links">
+                        <a
+                            class="action action-svg"
+                            href="https://www.npmjs.com/package/canathus"
+                        >
+                            <img
+                                src="/canathus/assets/npm.svg"
+                                alt="NPM logo"
+                            />
+                        </a>
+                        <a
+                            class="action action-svg"
+                            href="https://github.com/oflint-1/canathus"
+                        >
+                            <img
+                                src="/canathus/assets/github.svg"
+                                alt="GitHub logo"
+                            />
+                        </a>
+                    </div>
+                </nav>
+                <section class="splash">
+                    <div class="header">
+                        <h1 class="heading">
+                            Create complex forms, <br />Without complex code.
+                        </h1>
+                        <small class="subtext"
+                            >A react form micro library</small
+                        >
+                        <a
+                            class="call-to-action"
+                            href="/canathus/getting-started.html"
+                        >
+                            <span>Get Started</span>
+                            <img
+                                src="/canathus/assets/right-arrow.svg"
+                                alt="Right arrow"
+                            />
+                            <img
+                                src="/canathus/assets/right-arrow-hover.svg"
+                                class="arrow-hover"
+                                alt="Right arrow"
+                            />
+                        </a>
+                    </div>
+                </section>
 
-        <!-- <div class="actions">
+                <!-- <div class="actions">
           <a
             class="action action-svg"
             href="https://www.npmjs.com/package/canathus"
@@ -89,95 +129,97 @@
           </a>
         </div> -->
 
-        <div class="demo" data-nosnippet>
-          <iframe
-            src="https://codesandbox.io/embed/canathus-w5k5l9?fontsize=14&hidenavigation=1&theme=light"
-            style="
-              width: 100%;
-              height: 500px;
-              border: 2px solid black;
-              border-radius: 4px;
-              overflow: hidden;
-            "
-            title="canathus"
-            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-          ></iframe>
-        </div>
-      </section>
+                <div class="demo" data-nosnippet>
+                    <iframe
+                        src="https://codesandbox.io/embed/canathus-w5k5l9?fontsize=14&hidenavigation=1&theme=light"
+                        style="
+                            width: 100%;
+                            height: 500px;
+                            border: 2px solid black;
+                            border-radius: 4px;
+                            overflow: hidden;
+                        "
+                        title="canathus"
+                        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                    ></iframe>
+                </div>
+            </section>
 
-      <section class="features">
-        <h2>Features</h2>
+            <section class="features">
+                <h2>Features</h2>
 
-        <div class="feature-list">
-          <div class="feature-item">
-            <div class="feature-img-container">
-              <img
-                src="/canathus/assets/sliders.svg"
-                class="arrow-hover"
-                alt="Sliders"
-              />
-            </div>
-            <div class="feature-info">
-              <h3>Customisable</h3>
-              <p>
-                With custom validators, canathus form elements can be crafted to
-                fit any type of input data.
-              </p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-img-container">
-              <img
-                src="/canathus/assets/weight.svg"
-                class="arrow-hover"
-                alt="weight"
-              />
-            </div>
-            <div class="feature-info">
-              <h3>Lightweight</h3>
-              <p>
-                With a module size of 2.7kB, adding canathus to your project
-                adds minimal overhead, creating a slimline final package.
-              </p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-img-container">
-              <img
-                src="/canathus/assets/chart.svg"
-                class="arrow-hover"
-                alt="Chart"
-              />
-            </div>
-            <div class="feature-info">
-              <h3>Simple</h3>
-              <p>
-                Canathus has a shallow learning curve, meaning it can be
-                implemented into projects quickly and easily.
-              </p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-img-container">
-              <img
-                src="/canathus/assets/box.svg"
-                class="arrow-hover"
-                alt="Box"
-              />
-            </div>
-            <div class="feature-info">
-              <h3>Open-Source</h3>
-              <p>
-                Being open-source, canathus is completely free to use in any
-                personal or commercial projects!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-img-container">
+                            <img
+                                src="/canathus/assets/sliders.svg"
+                                class="arrow-hover"
+                                alt="Sliders"
+                            />
+                        </div>
+                        <div class="feature-info">
+                            <h3>Customisable</h3>
+                            <p>
+                                With custom validators, canathus form elements
+                                can be crafted to fit any type of input data.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-img-container">
+                            <img
+                                src="/canathus/assets/weight.svg"
+                                class="arrow-hover"
+                                alt="weight"
+                            />
+                        </div>
+                        <div class="feature-info">
+                            <h3>Lightweight</h3>
+                            <p>
+                                With a module size of 2.7kB, adding canathus to
+                                your project adds minimal overhead, creating a
+                                slimline final package.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-img-container">
+                            <img
+                                src="/canathus/assets/chart.svg"
+                                class="arrow-hover"
+                                alt="Chart"
+                            />
+                        </div>
+                        <div class="feature-info">
+                            <h3>Simple</h3>
+                            <p>
+                                Canathus has a shallow learning curve, meaning
+                                it can be implemented into projects quickly and
+                                easily.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-img-container">
+                            <img
+                                src="/canathus/assets/box.svg"
+                                class="arrow-hover"
+                                alt="Box"
+                            />
+                        </div>
+                        <div class="feature-info">
+                            <h3>Open-Source</h3>
+                            <p>
+                                Being open-source, canathus is completely free
+                                to use in any personal or commercial projects!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- <section class="feature-section">
+            <!-- <section class="feature-section">
         <h1 class="sub-heading">features</h1>
 
         <div class="features">
@@ -236,40 +278,43 @@
           </div>
         </div>
       </section> -->
-      <section class="action-section">
-        <img
-          src="/canathus/assets/logo.svg"
-          alt="Canathus logo"
-          class="action-logo"
-        />
-        <h1 class="sub-heading action-heading">Ready to Start?</h1>
-        <!-- <span class="action-description">
+            <section class="action-section">
+                <img
+                    src="/canathus/assets/logo.svg"
+                    alt="Canathus logo"
+                    class="action-logo"
+                />
+                <h1 class="sub-heading action-heading">Ready to Start?</h1>
+                <!-- <span class="action-description">
           Create validated forms quickly and effectively with canathus. <br />
           Make your code more readable, without sacrificing customisability.
         </span> -->
-        <a class="call-to-action" href="/canathus/getting-started.html">
-          <span>Get Started</span>
-          <img src="/canathus/assets/right-arrow.svg" alt="Right arrow" />
-          <img
-            src="/canathus/assets/right-arrow-hover.svg"
-            class="arrow-hover"
-            alt="Right arrow"
-          />
-        </a>
-      </section>
-    </main>
+                <a class="call-to-action" href="/canathus/getting-started.html">
+                    <span>Get Started</span>
+                    <img
+                        src="/canathus/assets/right-arrow.svg"
+                        alt="Right arrow"
+                    />
+                    <img
+                        src="/canathus/assets/right-arrow-hover.svg"
+                        class="arrow-hover"
+                        alt="Right arrow"
+                    />
+                </a>
+            </section>
+        </main>
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".navigation");
-      const nav = document.querySelector("nav");
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".navigation");
+            const nav = document.querySelector("nav");
 
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("visible");
-        nav.classList.toggle("visible");
-        hamburger.classList.toggle("visible");
-        document.body.classList.toggle("no-scroll");
-      });
-    </script>
-  </body>
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("visible");
+                nav.classList.toggle("visible");
+                hamburger.classList.toggle("visible");
+                document.body.classList.toggle("no-scroll");
+            });
+        </script>
+    </body>
 </html>
